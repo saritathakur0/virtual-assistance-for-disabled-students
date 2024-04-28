@@ -1,42 +1,42 @@
 {
   "project_info": {
-    "project_number": "648150011969",
-    "firebase_url": "https://virtualassistance-727b8-default-rtdb.firebaseio.com",
-    "project_id": "virtualassistance-727b8",
-    "storage_bucket": "virtualassistance-727b8.appspot.com"
+    "project_number": "",
+    "firebase_url": "",
+    "project_id": "",
+    "storage_bucket": ""
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:648150011969:android:dbf4859e76adc6042236c0",
+        "mobilesdk_app_id": "",
         "android_client_info": {
           "package_name": "com.example.registration"
         }
       },
       "oauth_client": [
         {
-          "client_id": "648150011969-iuavuhcqfq2m79vb75a8jl2vehml1lhe.apps.googleusercontent.com",
+          "client_id": "",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.registration",
-            "certificate_hash": "ba1fe65db96752a3dece99879dac0ae867674b89"
+            "certificate_hash": ""
           }
         },
         {
-          "client_id": "648150011969-gm8ievbs46pd3hgj4eca7cqnb6t7814i.apps.googleusercontent.com",
+          "client_id": "",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD_r0Pc2KsxRIX5Roxe4lgkJnT_tzk7J4g"
+          "current_key": ""
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "648150011969-gm8ievbs46pd3hgj4eca7cqnb6t7814i.apps.googleusercontent.com",
+              "client_id": "",
               "client_type": 3
             }
           ]
