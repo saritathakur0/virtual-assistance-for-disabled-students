@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgimg"
+    tools:context=".VolunteerVerification">
+
+
+  <TextView
+      android:id="@+id/volunteerUsername"
+      android:layout_width="280dp"
+      android:layout_height="57dp"
+      android:background="@drawable/input_bg"
+      android:drawableLeft="@drawable/ic_username"
+      android:drawablePadding="10dp"
+      android:ems="10"
+      android:inputType="textPersonName"
+      android:paddingLeft="20dp"
+      android:paddingTop="10dp"
+      android:paddingRight="10dp"
+      android:paddingBottom="10dp"
+      android:textColor="@color/white"
+      android:textColorHint="@color/darkgrey"
+      android:textSize="18sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.089"
+      tools:ignore="SpeakableTextPresentCheck" />
+
+  <Button
+      android:id="@+id/volunteerSendMobile"
+      android:layout_width="157dp"
+      android:layout_height="54dp"
+      android:layout_marginTop="28dp"
+      android:layout_marginEnd="50dp"
+      android:background="@drawable/btn_bg"
+      android:drawableLeft="@drawable/ic_mobile"
+      android:paddingLeft="20dp"
+      android:paddingTop="10dp"
+      android:paddingRight="10dp"
+      android:paddingBottom="10dp"
+      android:text="Send OTP"
+      app:layout_constraintEnd_toStartOf="@+id/volunteerMobileotp"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="@+id/textView"
+      app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+  <Button
+      android:id="@+id/volunteerSendEmail"
+      android:layout_width="155dp"
+      android:layout_height="54dp"
+      android:layout_marginTop="28dp"
+      android:layout_marginEnd="50dp"
+      android:background="@drawable/btn_bg"
+      android:drawableLeft="@drawable/ic_email"
+      android:paddingLeft="20dp"
+      android:paddingTop="10dp"
+      android:paddingRight="10dp"
+      android:paddingBottom="10dp"
+      android:text="Send Link"
+      app:layout_constraintEnd_toStartOf="@+id/volunteerVerifyEmail"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toStartOf="@+id/textView2"
+      app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+  <EditText
+      android:id="@+id/volunteerMobileotp"
+      android:layout_width="162dp"
+      android:layout_height="48dp"
+      android:layout_marginStart="-25dp"
+      android:layout_marginTop="32dp"
+      android:background="@drawable/input_bg"
+      android:drawableLeft="@drawable/ic_mobile"
+      android:drawablePadding="10dp"
+      android:ems="10"
+      android:hint="Enter OTP"
+      android:inputType="textPersonName"
+      android:paddingLeft="20dp"
+      android:paddingTop="10dp"
+      android:paddingRight="10dp"
+      android:paddingBottom="10dp"
+      android:textColor="@color/white"
+      android:textColorHint="@color/darkgrey"
+      app:layout_constraintEnd_toEndOf="@+id/textView"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toEndOf="@+id/volunteerSendMobile"
+      app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+  <Button
+      android:id="@+id/volunteerVerifyMobile"
+      android:layout_width="337dp"
+      android:layout_height="48dp"
+      android:layout_marginTop="36dp"
+      android:background="@drawable/btn_bg"
+      android:drawableLeft="@drawable/ic_mobile"
+      android:text="Verify"
+      android:textSize="16sp"
+      app:layout_constraintEnd_toEndOf="@+id/volunteerMobileotp"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="@+id/volunteerSendMobile"
+      app:layout_constraintTop_toBottomOf="@+id/volunteerSendMobile" />
+
+  <Button
+      android:id="@+id/volunteerVerifyEmail"
+      android:layout_width="157dp"
+      android:layout_height="54dp"
+      android:layout_marginStart="-25dp"
+      android:layout_marginTop="28dp"
+      android:background="@drawable/btn_bg"
+      android:drawableLeft="@drawable/ic_email"
+      android:text="Verify"
+      app:layout_constraintEnd_toEndOf="@+id/textView2"
+      app:layout_constraintHorizontal_bias="0.5"
+      app:layout_constraintStart_toEndOf="@+id/volunteerSendEmail"
+      app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="36dp"
+      android:text="Mobile Verification"
+      android:textColor="@color/white"
+      android:textSize="22sp"
+      app:layout_constraintEnd_toEndOf="@+id/volunteerUsername"
+      app:layout_constraintStart_toStartOf="@+id/volunteerUsername"
+      app:layout_constraintTop_toBottomOf="@+id/volunteerUsername" />
+
+  <TextView
+      android:id="@+id/textView2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="48dp"
+      android:text="Email Verification"
+      android:textColor="@color/white"
+      android:textSize="22sp"
+      app:layout_constraintEnd_toEndOf="@+id/volunteerVerifyMobile"
+      app:layout_constraintHorizontal_bias="0.484"
+      app:layout_constraintStart_toStartOf="@+id/volunteerVerifyMobile"
+      app:layout_constraintTop_toBottomOf="@+id/volunteerVerifyMobile" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgimg"
+    android:paddingLeft="20dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    tools:context=".ViewInfoVol">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-67dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/vtextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Volunteer Information"
+                android:textColor="@color/white"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.05" />
+
+            <TextView
+                android:id="@+id/vnameinfo"
+                android:layout_width="307dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="40dp"
+                android:height="48dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/vtextView"
+                app:layout_constraintStart_toStartOf="@+id/vtextView"
+                app:layout_constraintTop_toBottomOf="@+id/vtextView" />
+
+            <TextView
+                android:id="@+id/vaddressinfo"
+                android:layout_width="306dp"
+                android:layout_height="86dp"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/vnameinfo"
+                app:layout_constraintStart_toStartOf="@+id/vnameinfo"
+                app:layout_constraintTop_toBottomOf="@+id/vnameinfo" />
+
+            <TextView
+                android:id="@+id/vexaminfo"
+                android:layout_width="0dp"
+                android:layout_height="143dp"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/vaddressinfo"
+                app:layout_constraintStart_toStartOf="@+id/vaddressinfo"
+                app:layout_constraintTop_toBottomOf="@+id/vaddressinfo" />
+
+            <TextView
+                android:id="@+id/vemailinfo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:height="48dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/vexaminfo"
+                app:layout_constraintStart_toStartOf="@+id/vexaminfo"
+                app:layout_constraintTop_toBottomOf="@+id/vexaminfo" />
+
+            <TextView
+                android:id="@+id/vmobileinfo"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="20dp"
+                android:height="48dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/vemailinfo"
+                app:layout_constraintStart_toStartOf="@+id/vemailinfo"
+                app:layout_constraintTop_toBottomOf="@+id/vemailinfo" />
+
+            <Button
+                android:id="@+id/vbackbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="BacK"
+                app:layout_constraintEnd_toEndOf="@+id/vmobileinfo"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/vmobileinfo"
+                app:layout_constraintTop_toBottomOf="@+id/vmobileinfo" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

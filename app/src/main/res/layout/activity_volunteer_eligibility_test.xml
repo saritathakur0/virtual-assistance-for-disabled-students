@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgimg"
+    tools:context=".VolunteerEligibilityTest">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/eligibilityTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="Eligibilty Test"
+                android:textColor="@color/design_default_color_on_primary"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.501"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.035" />
+
+            <TextView
+                android:id="@+id/q1"
+                android:layout_width="320dp"
+                android:layout_height="31dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="50dp"
+                android:text="Q.1 Select option no. (b)"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="@+id/eligibilityTitle"
+                app:layout_constraintHorizontal_bias="0.404"
+                app:layout_constraintStart_toStartOf="@+id/eligibilityTitle"
+                app:layout_constraintTop_toBottomOf="@+id/eligibilityTitle" />
+
+            <RadioGroup
+                android:id="@+id/rgroup1"
+                android:layout_width="315dp"
+                android:layout_height="145dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/q1"
+                app:layout_constraintStart_toStartOf="@+id/q1"
+                app:layout_constraintTop_toBottomOf="@+id/q1">
+
+                <RadioButton
+                    android:id="@+id/q1op1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Option A"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/q1op2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Option B"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/q1op3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Option C"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/q2"
+                android:layout_width="304dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="30dp"
+                android:text="Q.2 Translate: तुम लंदन से कब वापस आए?"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                app:layout_constraintEnd_toEndOf="@+id/rgroup1"
+                app:layout_constraintStart_toStartOf="@+id/rgroup1"
+                app:layout_constraintTop_toBottomOf="@+id/rgroup1" />
+
+            <RadioGroup
+                android:id="@+id/rgroup2"
+                android:layout_width="314dp"
+                android:layout_height="149dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/q2"
+                app:layout_constraintStart_toStartOf="@+id/q2"
+                app:layout_constraintTop_toBottomOf="@+id/q2">
+
+                <RadioButton
+                    android:id="@+id/q2op1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="When did you get back from London?"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/q2op2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Did you come back from  London?"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/q2op3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How did you get back from London?"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/q3"
+                android:layout_width="320dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="20dp"
+                android:text="Q.3 Translate: &quot;This bicycle is too small for you.&quot;"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/rgroup2"
+                app:layout_constraintStart_toStartOf="@+id/rgroup2"
+                app:layout_constraintTop_toBottomOf="@+id/rgroup2" />
+
+            <RadioGroup
+                android:id="@+id/rgroup3"
+                android:layout_width="323dp"
+                android:layout_height="145dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/q3"
+                app:layout_constraintStart_toStartOf="@+id/q3"
+                app:layout_constraintTop_toBottomOf="@+id/q3">
+
+                <RadioButton
+                    android:id="@+id/q3op1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="यह साईकल तुम्हारे लिए बहुत छोटी है।"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/q3op2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="यह साइकिल आपके लिए बड़ी है।"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/q3op3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="यह साइकिल खराब है।"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+            </RadioGroup>
+
+            <VideoView
+                android:id="@+id/checkVideo"
+                android:layout_width="316dp"
+                android:layout_height="262dp"
+                android:layout_marginTop="16dp"
+                android:soundEffectsEnabled="true"
+                app:layout_constraintEnd_toEndOf="@+id/rgroup3"
+                app:layout_constraintHorizontal_bias="0.571"
+                app:layout_constraintStart_toStartOf="@+id/rgroup3"
+                app:layout_constraintTop_toBottomOf="@+id/q4" />
+
+            <TextView
+                android:id="@+id/q4"
+                android:layout_width="337dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:text="Q.4 Press PLAY and Write down what you listen. "
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/rgroup3"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/rgroup3"
+                app:layout_constraintTop_toBottomOf="@+id/rgroup3" />
+
+            <Button
+                android:id="@+id/playbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_bg"
+                android:onClick="playVideo"
+                android:text="play"
+                app:layout_constraintEnd_toEndOf="@+id/checkVideo"
+                app:layout_constraintHorizontal_bias="0.522"
+                app:layout_constraintStart_toStartOf="@+id/checkVideo"
+                app:layout_constraintTop_toBottomOf="@+id/checkVideo" />
+
+            <RadioGroup
+                android:id="@+id/rgroup4"
+                android:layout_width="323dp"
+                android:layout_height="144dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="@+id/checkVideo"
+                app:layout_constraintStart_toStartOf="@+id/checkVideo"
+                app:layout_constraintTop_toBottomOf="@+id/playbutton">
+
+                <RadioButton
+                    android:id="@+id/q4op1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Happy Holi Happy Holi"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/q4op2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Happy Diwali Happy Diwali"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/q4op3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Merry Christmas Enjoy!"
+                    android:textColor="@color/white"
+                    android:textSize="16dp" />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/checkEligibiltyButton"
+                android:layout_width="287dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/btn_bg"
+                android:text="CHECK ELIGIBILITY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/rgroup4"
+                app:layout_constraintHorizontal_bias="0.638"
+                app:layout_constraintStart_toStartOf="@+id/rgroup4"
+                app:layout_constraintTop_toBottomOf="@+id/rgroup4">
+
+            </Button>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

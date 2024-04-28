@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/volunteerTask"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgimg"
+    tools:context=".VolunteerTasks">
+
+    <Button
+        android:id="@+id/volunteerAddTask"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btn_bg"
+        android:text="+ Add Task"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/VolunteerTaskDate"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/VolunteerTaskDate"
+        app:layout_constraintTop_toBottomOf="@+id/VolunteerTaskDate" />
+
+    <ListView
+        android:id="@+id/volunteerTaskList"
+        android:layout_width="318dp"
+        android:layout_height="449dp"
+        android:layout_marginTop="16dp"
+        android:cacheColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/volunteerAddTask"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/volunteerAddTask"
+        app:layout_constraintTop_toBottomOf="@+id/volunteerAddTask" />
+
+    <EditText
+        android:id="@+id/volunteerTaskLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_menu"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Enter task label"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/darkgrey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <EditText
+        android:id="@+id/VolunteerTaskDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_bg"
+        android:drawableLeft="@drawable/ic_date"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Enter Date (mm/dd/yyyy)"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/darkgrey"
+        app:layout_constraintEnd_toEndOf="@+id/volunteerTaskLabel"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/volunteerTaskLabel"
+        app:layout_constraintTop_toBottomOf="@+id/volunteerTaskLabel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

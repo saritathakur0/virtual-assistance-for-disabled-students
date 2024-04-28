@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Registration</string>
+
+
+    <string-array name="disabilities">
+        <item>Disability</item>
+        <item>Blindness</item>
+        <item>Hearing Impairment</item>
+        <item>Cerebral Palsy</item>
+        <item>Locomotor Disability</item>
+        <item>Amputation</item>
+        <item>Multiple Sclerosis</item>
+        <item>Dyslexia</item>
+    </string-array>
+
+    <string-array name="boardNames">
+        <item>State Board</item>
+        <item>CBSE Board</item>
+        <item>ICSC Board</item>
+    </string-array>
+</resources>
